@@ -6,6 +6,7 @@
     --grayish-blue: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --very-dark-blue: hsl(240, 100%, 5%);
+    /* --very-dark-blue: hsl(240, 100%, 5%); */
 }
 *{
     margin: 0;
@@ -15,6 +16,7 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    background-color: black;
 }
 .container{
     max-width: 1200px;
@@ -24,14 +26,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0 2rem 0;
+    margin: 3rem 0 1rem 0;
     padding: 0 20px;
+    /* border: 1px solid red; */
 }
 .logo{
-
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 .logo img{
-
+    width: 200px;
 }
 .bars{
     display: none;
@@ -48,15 +56,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
 }
 .links ul li{
 }
 .links ul li a{
-    color: var(--dark-grayish-blue);
+    /* color: var(--dark-grayish-blue); */
+    color: rgb(231, 219, 219);
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
+    padding-right: 10px;
 }
 .links ul li a:active{
     color: var(--primary-red);
@@ -91,6 +102,8 @@ header{
     line-height: 1.1;
     font-weight: 800;
     overflow: hidden;
+    color: white;
+
 }
 .lower-left-content{
 
@@ -99,6 +112,7 @@ header{
     font-size: 15px;
     line-height: 1.6;
     font-weight: 400;
+    color: white;
 }
 .lower-left-content button{
     background-color: var(--primary-red);
@@ -174,12 +188,14 @@ header{
     font-weight: 700;
     margin-bottom: 0.5rem;
     cursor: pointer;
+    color: white;
 }
 .card h4:active{
-    color: var(--primary-red);
+    color: white;
 }
 .card p{
     font-size: 15px;
+    color: white;
 }
 footer{
     background-color: var(--very-dark-blue);
